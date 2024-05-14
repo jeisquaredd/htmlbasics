@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Responsive Website</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+    padding-top: 145px; /* Adjust this value based on the height of your header */
+    box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 0px;
+  margin: 0px 0px;
+  text-align: center;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+nav {
+  background-color: #333;
+  border: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 0px;
+  
+}
+header nav ul {
+  text-align: left;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+  .landing {
+    background-image: url('https://via.placeholder.com/1200x600');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  .landing h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .landing p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  .landing button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .landing button:hover {
+    background-color: #45a049;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .services {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .service {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .service:hover {
+    transform: translateY(-5px);
+  }
+  .service h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .service p {
+    color: #666;
+  }
+  aside {
+    flex: 0 0 calc(25% - 20px);
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 768px) {
+    .service {
+      flex: 0 0 calc(50% - 20px);
+    }
+    aside {
+      flex: 0 0 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+<li>      <a href="#">Home</a> | </li>
+<li>      <a href="#">About</a> | </li>
+  <li>      <a href="#">Services</a> |</li>
+    <li>     <a href="#">Portfolio</a> | </li>
+      <li>    <a href="#">Contact</a></li>
+    </nav> </ul>
+  </header>
+  
+
+<section class="landing">
+  <h1>Welcome to our Website</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <button>Get Started</button>
+</section>
+
+<main>
+  <section class="services">
+    <div class="service">
+      <h3>Service 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="service">
+      <h3>Service 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="service">
+      <h3>Service 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </section>
+
+  <aside>
+    <h2>Related Links</h2>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+  </aside>
+  <section>
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sapien vitae convallis pulvinar. Fusce eget lacus non felis tempor interdum.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Modern Responsive Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Div</title>
+<style>
+  /* Center the container */
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    /* Style the div */
+    .flex-container {
+        width: 100%; /* Adjust width as needed */
+        max-width: 1000px; /* Ensure it doesn't exceed a certain width */
+        height: auto; /* Automatically adjust height based on content */
+        border: 5px solid black;
+        display: flex;
+        justify-content: center;
+        /*align-items: flex-end; /* Align items to the bottom of the container */
+        align-content:center; /* Center flex lines within the container */
+        gap: 10px; /* Add spacing between flex items */
+        box-sizing: border-box; /* Include border in the width calculation */
+        flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+        padding: 20px; /* Add some padding for spacing */
+    }
+
+    .flex-item {
+        background: tomato;
+        padding: 5px;
+       
+        color: white;
+        font-weight: bold;
+        font-size: 1em;
+        text-align: center;
+        box-sizing: border-box; /* Include padding in the width calculation */
+        overflow: auto; /* Allow content to scroll if it exceeds the width */
+    }
+
+    .flex-item h3 {
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+
+    <main class="flex-container">
+        <!-- Your content here -->
+        <!-- This div will be centered with a border of 5px solid black -->
+        <section class="flex-item"><h3>Item 1</h3></section>
+        <section class="flex-item">
+          <h3>Item 2</h3>
+          <section class="flex-item">Nested Item 2</section>
+          <section class="flex-item">Nested Item 2</section>
+          <section class="flex-item">Nested Item 2</section>
+          <section class="flex-item">Nested Item 2</section>
+        </section>
+      </main>
+      
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first HTML with Box Model</title>
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #fcfaf5;
+    padding: 0;
+    color: white;
+}
+
+header, nav, main, section, article, aside,footer{
+    border: 1px solid rgb(238, 239, 238);
+   
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color:gray;
+    box-sizing: content-box;
+}
+header{
+    background-color: black;
+}
+nav{
+    padding: 5px;
+}
+
+nav ul{
+   list-style-type: none;
+   padding: 0px;
+   text-align: center;
+  
+  
+}
+
+nav ul li{
+    display: inline;
+    padding-left: 20px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+   .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex-item {
+    flex: 1 0 calc(33.33% - 20px);
+}
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Webpage</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">PHP</a></li>
+        </ul>
+    </nav>
+   
+    <div class="flex-container">
+<section class="flex-item">
+    <h2>Some Text For Section</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis rem iste nam inventore illum ad, sint soluta hic aut repellat qui similique eveniet porro id, magni quos odio nemo consectetur.</p>
+</section>
+<article class="flex-item">
+<h2>I am an article section</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos cum facere! Qui sit, iure voluptatem earum atque nam tempore. Eligendi deserunt fuga natus aliquam! Iusto eveniet itaque quod molestiae?</p>
+
+</article>
+<aside class="flex-item">
+<h2>List of Related Links</h2>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur ex aliquam laborum. Nihil beatae veritatis maxime optio quis, impedit perferendis incidunt velit quaerat consectetur, eaque dolor nesciunt? Distinctio, pariatur hic?</p>
+
+</aside>
+
+
+</div>
+<footer><h1>Some Footer</h1></footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-Container Website</title>
+<style>
+    /* Global styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header, nav, section, article, aside, footer {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+    /* Individual container styles */
+    header, footer {
+        background-color: #333;
+        color: #fff;
+    }
+    nav {
+        background-color: #f0f0f0;
+    }
+    section {
+        background-color: #f9f9f9;
+    }
+    article {
+        background-color: #eaeaea;
+    }
+    aside {
+        background-color: #dedede;
+    }
+
+    nav ul li a:hover {
+        background-color: #777;
+      }
+      nav ul li a.current {
+        background-color: #b20f0f;
+      }
+      nav ul li{
+        display: inline;
+        
+    }
+    
+    nav ul li a{
+        font-size: 20px;
+        text-decoration: none;
+        padding: 0px;
+        color: black;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Main Section</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus leo a ligula ultrices, eu volutpat orci malesuada.</p>
+    </section>
+    <article>
+        <h2>Featured Article</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus leo a ligula ultrices, eu volutpat orci malesuada.</p>
+    </article>
+    <aside>
+        <h2>Side Bar</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus leo a ligula ultrices, eu volutpat orci malesuada.</p>
+    </aside>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
